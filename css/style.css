@@ -1,0 +1,316 @@
+/* ===== Font Imports ===== */
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../assets/fonts/PP_Neue_Montreal-Regular/PPNeueMontreal-Regular.woff2") format("woff2"),
+    url("../assets/fonts/PP_Neue_Montreal-Regular/PPNeueMontreal-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Writer";
+  src: url("../assets/fonts/PP_Writer-Regular/PPWriter-Regular.woff2") format("woff2"),
+    url("../assets/fonts/PP_Writer-Regular/PPWriter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal Mono";
+  src: url("../assets/fonts/PP_Neue_Montreal-Mono/PPNeueMontrealMono-Book.woff2") format("woff2"),
+    url("../assets/fonts/PP_Neue_Montreal-Mono/PPNeueMontrealMono-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ===== Colors ===== */
+  --color-primary: #004164;
+  /* Deep Navy – headings, accents */
+  --color-accent: #004141;
+  /* Forest Green – buttons, icons */
+  --color-bg: #CFC6B5;
+  /* Serenity Sand – background */
+  --color-highlight: #E59E3E;
+  /* Sunny Yellow – hovers/highlights */
+  --color-callout: #B73D28;
+  /* Red Earth – alerts/callouts */
+  --color-secondary: #8061A1;
+  /* Lavender Pop – secondary accent */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Brand Colors */
+  --color-primary-navy: #0f172a;
+  --color-primary-navy-light: #1e293b;
+  --color-primary-navy-dark: #020617;
+
+  --color-secondary-amber: #f59e0b;
+  --color-secondary-amber-light: #fbbf24;
+  --color-secondary-amber-dark: #d97706;
+
+  --color-accent-terracotta: #dc2626;
+  --color-accent-terracotta-light: #ef4444;
+  --color-accent-terracotta-dark: #b91c1c;
+
+  --color-accent-emerald: #059669;
+  --color-accent-emerald-light: #10b981;
+  --color-accent-emerald-dark: #047857;
+
+  --color-accent-purple: #7c3aed;
+  --color-accent-purple-light: #8b5cf6;
+  --color-accent-purple-dark: #6d28d9;
+
+  --color-accent-orange: #ea580c;
+  --color-accent-orange-light: #f97316;
+  --color-accent-orange-dark: #c2410c;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* ===== Gradient Colors ===== */
+    --color-accent-teal: #0d9488;
+    /* teal-600 */
+    --color-accent-emerald: #059669;
+    /* emerald-700 already defined, reused */
+    --color-accent-orange-bright: #ea580c;
+    /* orange-600 */
+    --color-accent-red: #b91c1c;
+    /* red-700 */
+    --color-accent-purple: #7c3aed;
+    /* purple-600 */
+    --color-accent-indigo: #4338ca;
+    /* indigo-700 */
+    --color-accent-amber: #f59e0b;
+    /* amber-500 */
+    --color-accent-orange: #f97316;
+    /* orange-600 */
+  
+    /* ===== Gradient Presets ===== */
+    --gradient-teal-emerald: linear-gradient(to bottom right, var(--color-accent-teal), var(--color-accent-emerald));
+    --gradient-orange-red: linear-gradient(to bottom right, var(--color-accent-orange-bright), var(--color-accent-red));
+    --gradient-purple-indigo: linear-gradient(to bottom right, var(--color-accent-purple), var(--color-accent-indigo));
+    --gradient-amber-orange: linear-gradient(to bottom right, var(--color-accent-amber), var(--color-accent-orange));
+
+  /* ===== Typography ===== */
+  --font-primary: "PP Neue Montreal", Inter, system-ui, Arial, sans-serif;
+  --font-secondary: "PP Writer", Georgia, Times, serif;
+  --font-mono: "Neue Montreal Mono", "IBM Plex Mono", ui-monospace;
+
+  /* ===== Layout ===== */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --radius: 8px;
+  --focus-outline-primary: 1px solid var(--color-primary-navy);
+
+  /* ===== Typography Scale ===== */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-medium: 1.3rem;
+  --fs-large: 3.5rem;
+
+  --lh-base: 1.6;
+  --fw-thin: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+  line-height: var(--lh-base);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-highlight);
+}
+
+/* ===== Headings ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-thin);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.03rem;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.arrow {
+  padding-left: 5px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+.btn-primary {
+  background-color: var(--color-secondary-amber);
+  color: var(--color-white);
+  font-weight: var(--fw-medium);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-secondary-amber-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  outline: var(--focus-outline-primary);
+  color: var(--color-primary-navy-dark);
+  font-weight: var(--fw-semibold);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-navy-dark);
+  color: var(--color-white);
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: var(--spacing-lg) var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section--alt {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: var(--radius);
+}
+
+.section-heading {
+  font-family: var(--font-secondary);
+  font-size: var(--fs-large);
+  font-weight: var(--fw-medium);
+  color: var(--color-primary-navy);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.section-subheading {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  color: var(--color-primary-navy-dark);
+  line-height: normal;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.callout {
+  background-color: var(--color-callout);
+  color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  margin: var(--spacing-md) 0;
+}
+
+/* ===== Gradient Background Utilities ===== */
+.bg-gradient-teal-emerald {
+  background: var(--gradient-teal-emerald);
+}
+
+.bg-gradient-orange-red {
+  background: var(--gradient-orange-red);
+}
+
+.bg-gradient-purple-indigo {
+  background: var(--gradient-purple-indigo);
+}
+
+.bg-gradient-amber-orange {
+  background: var(--gradient-amber-orange);
+}
+
+[class*="bg-gradient-"]:hover {
+  filter: brightness(1.05);
+  transition: filter 0.3s ease;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: var(--spacing-md);
+  font-size: var(--fs-small);
+  color: var(--color-secondary);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
