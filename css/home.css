@@ -187,6 +187,7 @@
   font-family: var(--font-primary);
   font-size: var(--fs-body);
   color: var(--color-black);
+  text-align: left;
   opacity: 0.9;
   line-height: var(--lh-base);
   margin-bottom: var(--spacing-sm);
@@ -262,6 +263,8 @@
   font-family: var(--font-primary);
   font-size: 1.1rem;
   color: var(--color-primary-navy-dark);
+  text-align: left;
+  max-width: 94%;
   line-height: normal;
   margin-bottom: var(--spacing-md);
 }
