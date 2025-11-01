@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -41,12 +42,176 @@
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Coming Soon</h1>
+      <h1>Partner With Us</h1>
+      <p class="subtitle">Let's build the future together</p>
       <div class="divider"></div>
-      <a href="index.html" class="btn btn-primary">
-        Back to Home Page
+      <a href="#contact-form" class="btn btn-primary">
+        Get in Touch
         <span class="arrow"> → </span>
       </a>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- ===== Contact Info ===== -->
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>
+            We collaborate through co-investment in high-impact ventures,
+            strategic partnerships that amplify reach, and portfolio access for
+            aligned investors.
+          </p>
+
+          <div class="contact-item">
+            <div class="icon bg-gradient-amber-orange">
+              <img src="./assets/icons/mail.svg" alt="Mail" />
+            </div>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:info@104impact.com">info@104impact.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon bg-gradient-teal-emerald">
+              <img src="./assets/icons/globe.svg" alt="Website" />
+            </div>
+            <div>
+              <h3>Website</h3>
+              <a href="https://www.104impact.com" target="_blank">www.104impact.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon bg-gradient-orange-red">
+              <img src="./assets/icons/map-pin.svg" alt="Location" />
+            </div>
+            <div>
+              <h3>Location</h3>
+              <p style="margin-bottom: 0;">
+                128 City Rd, London EC4V 2JN<br />
+                United Kingdom
+              </p>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="contact-item">
+              <a href="https://www.linkedin.com/company/104-impact/" target="_blank">
+                <div class="icon icon-linkedin">
+                  <img src="./assets/icons/linkedin.svg" alt="linkedin" />
+                </div>
+              </a>
+            </div>
+            
+            <div class="contact-item">
+              <a href="https://www.instagram.com/104impact/" target="_blank">
+                <div class="icon icon-instagram">
+                  <img src="./assets/icons/instagram.svg" alt="instagram" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Contact Form ===== -->
+        <div id="contact-form" class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Tell us about your venture or inquiry..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Global Network Section ===== -->
+  <section class="network-section">
+    <div class="container">
+      <div class="network-header">
+        <h2>A Global Network Built<br />For Scale & Credibility.</h2>
+      </div>
+
+      <div class="network-content">
+        <div class="network-text">
+          <p>
+            Our reach spans investors, corporates, institutions, and governments
+            across key markets.
+          </p>
+          <p>
+            This network enables us to position our companies for capital, growth,
+            and lasting influence.
+          </p>
+
+          <div class="network-legend">
+            <span class="legend-item">
+              <span class="dot dot-purple"></span> Institutions
+            </span>
+            <span class="legend-item">
+              <span class="dot dot-navy"></span> Partners
+            </span>
+          </div>
+        </div>
+
+        <div class="network-map">
+          <img src="./assets/images/world_map.webp" alt="Global Network Map" />
+          <div class="connections">
+            <span class="node node-purple" style="top: 45%; left: 25%;"></span>
+            <span class="node node-navy" style="top: 38%; left: 35%;"></span>
+            <span class="node node-purple" style="top: 50%; left: 50%;"></span>
+            <span class="node node-navy" style="top: 42%; left: 65%;"></span>
+            <span class="node node-purple" style="top: 55%; left: 70%;"></span>
+            <span class="node node-navy" style="top: 60%; left: 40%;"></span>
+            <span class="node node-purple" style="top: 65%; left: 80%;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Partner Section ===== -->
+  <section class="hero-partner">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Guiding the Future</h1>
+
+      <div class="flex-parent">
+        <div>
+          <h2>Partner With Us</h2>
+
+          <div class="contact-links">
+            <a href="mailto:info@104impact.com">info@104impact.com</a>
+            <span class="divider"></span>
+            <a href="#">www.104impact.com</a>
+          </div>
+        </div>
+
+        <p class="disclaimer">
+          104 Impact Partners Ltd, a company incorporated in England and Wales under Company Number 16344386,
+          having its registered address at 128 City Rd, London EC4V 2JN (“104 Impact”) is not authorised or regulated
+          by the Financial Conduct Authority and does not engage in regulated activities. Our advice is limited to
+          fundraising strategy and investor introductions.
+        </p>
+      </div>
     </div>
   </section>
 
