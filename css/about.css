@@ -1,0 +1,209 @@
+@import url("./style.css");
+
+/* ===== Founder Section ===== */
+.founder-section {
+  background: var(--color-gray-50);
+  color: var(--color-primary-navy);
+  padding-bottom: 0;
+}
+
+.founder-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.founder-text {
+  padding: var(--spacing-lg);
+}
+
+.founder-text h2 {
+  font-family: var(--font-secondary);
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  font-weight: var(--fw-normal);
+  margin-bottom: 0rem;
+  color: var(--color-primary-navy-dark);
+}
+
+.founder-text h3 {
+  font-family: var(--font-primary);
+  font-size: 1.75rem;
+  font-weight: var(--fw-thin);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary-navy-dark);
+}
+
+.founder-text p {
+  font-family: var(--font-primary);
+  font-size: var(--fs-body);
+  color: var(--color-primary-navy-light);
+  line-height: var(--lh-base);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ===== Image Side ===== */
+.founder-image-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.founder-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* ===== Team Section ===== */
+.team-section {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+}
+
+.team-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Intro Text ===== */
+.team-intro {
+  max-width: 920px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.team-intro h2 {
+  font-family: var(--font-secondary);
+  font-size: var(--fs-h1);
+  line-height: normal;
+  color: var(--color-white);
+  color: var(--color-primary-navy);
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-intro p {
+  font-family: var(--font-primary);
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-primary-navy-dark);
+  line-height: var(--lh-base);
+}
+
+/* ===== Team Grid ===== */
+.team-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ===== Team Member ===== */
+.team-member {
+  background-color: var(--color-primary-navy-dark);
+  border-radius: var(--radius);
+  padding: var(--spacing-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.member-photo {
+  position: relative;
+  margin-bottom: var(--spacing-sm);
+}
+
+.member-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  background-color: var(--color-gray-100);
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===== Member Info ===== */
+.team-member h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.7rem;
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.team-member .role {
+  color: var(--color-secondary-amber);
+  font-weight: var(--fw-medium);
+  /* font-size: 1.2rem; */
+  margin-top: 0;
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-member .bio {
+  font-family: var(--font-primary);
+  color: rgba(255, 255, 255, 0.75);
+  color: var(--color-gray-100);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+  display: none;
+}
+
+/* ===== Responsive Media Queries ===== */
+@media (max-width: 992px) {
+  .founder-container {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-text {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-intro h2 {
+    font-size: var(--fs-h2);
+  }
+
+  .team-intro p {
+    text-align: start;
+  }
+
+  .member-photo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .team-member h3 {
+    font-size: 1.25rem;
+  }
+
+  .team-member .bio {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .founder-text h2 {
+    font-size: 2rem;
+  }
+
+  .founder-text h3 {
+    font-size: 1.25rem;
+  }
+
+  .founder-text p {
+    font-size: 0.95rem;
+  }
+}
