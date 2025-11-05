@@ -2,220 +2,305 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="We back founders solving the world's biggest problems. From first spark to global scale, 104 Impact is your long-term partner.">
-  <title>104 Impact - Guiding the Future</title>
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>104 Impact | Guiding the Future</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Theme -->
+  <link rel="stylesheet" href="theme.css" />
 </head>
 
-<body>
-  <!-- ===== Navbar ===== -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">
-        <img src="./assets/images/logo.png" alt="104 Impact Logo" />
+<body class="bg-white text-slate-900">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a class="flex items-center gap-3 group" href="index.html" data-discover="true">
+          <div class="w-8 h-8 text-slate-900 group-hover:text-amber-600 transition-colors duration-300"><svg
+              viewBox="0 0 100 100" class="w-full h-full">
+              <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+              <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+            </svg></div><span class="text-xl font-light tracking-wider text-slate-900">104 IMPACT</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-gray-700 hover:text-amber-600">Home</a>
+          <a href="about.html" class="text-sm font-medium text-gray-700 hover:text-amber-600">About</a>
+          <a href="contact.html" class="text-sm font-medium text-gray-700 hover:text-amber-600">Contact</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden p-2 text-slate-900 hover:text-amber-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white px-4 py-6 space-y-4">
+      <a href="index.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">Home</a>
+      <a href="about.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">About</a>
+      <a href="contact.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">Contact</a>
     </div>
   </header>
 
-  <!-- ===== Hero Section ===== -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Partner With Us</h1>
-      <p class="subtitle">Let's build the future together</p>
-      <div class="divider"></div>
-      <a href="#contact-form" class="btn btn-primary">
-        Get in Touch
-        <span class="arrow"> → </span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ===== Contact Section ===== -->
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-grid">
-        <!-- ===== Contact Info ===== -->
-        <div class="contact-info">
-          <h2>Get In Touch</h2>
-          <p>
-            We collaborate through co-investment in high-impact ventures,
-            strategic partnerships that amplify reach, and portfolio access for
-            aligned investors.
-          </p>
-
-          <div class="contact-item">
-            <div class="icon bg-gradient-amber-orange">
-              <img src="./assets/icons/mail.svg" alt="Mail" />
-            </div>
-            <div>
-              <h3>Email</h3>
-              <a href="mailto:info@104impact.com">info@104impact.com</a>
-            </div>
+  <main class="pt-20">
+    <section
+      class="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900">
+      <div class="absolute inset-0 opacity-30"
+        style="background-image: url(&quot;https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2072&quot;); background-size: cover; background-position: center center;">
+      </div>
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div style="opacity: 1; transform: none;">
+          <div class="inline-flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 text-white"><svg viewBox="0 0 100 100" class="w-full h-full">
+                <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+                <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                </line>
+                <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                </line>
+                <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round"></line>
+                <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor"
+                  stroke-width="3" stroke-linecap="round"></line>
+                <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              </svg></div>
+            <h2 class="text-2xl font-light text-white tracking-wider">104 IMPACT</h2>
           </div>
+          <h1 class="text-5xl md:text-7xl font-serif text-white mb-6">Partner With Us</h1>
+          <p class="text-xl text-gray-200 font-light">Let's build the future together</p>
+        </div>
+      </div>
+    </section>
 
-          <div class="contact-item">
-            <div class="icon bg-gradient-teal-emerald">
-              <img src="./assets/icons/globe.svg" alt="Website" />
-            </div>
-            <div>
-              <h3>Website</h3>
-              <a href="https://www.104impact.com" target="_blank">www.104impact.com</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="icon bg-gradient-orange-red">
-              <img src="./assets/icons/map-pin.svg" alt="Location" />
-            </div>
-            <div>
-              <h3>Location</h3>
-              <p style="margin-bottom: 0;">
-                128 City Rd, London EC4V 2JN<br />
-                United Kingdom
-              </p>
-            </div>
-          </div>
-
-          <div class="flex-row">
-            <div class="contact-item">
-              <a href="https://www.linkedin.com/company/104-impact/" target="_blank">
-                <div class="icon icon-linkedin">
-                  <img src="./assets/icons/linkedin.svg" alt="linkedin" />
+    <section class="py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16">
+          <div style="opacity: 1; transform: none;">
+            <h2 class="text-4xl font-serif text-slate-900 mb-8">Get In Touch</h2>
+            <p class="text-lg text-gray-600 mb-12 leading-relaxed">We collaborate through co-investment in high-impact
+              ventures, strategic partnerships that amplify reach, and portfolio access for aligned investors.</p>
+            <div class="space-y-8">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-mail w-6 h-6 text-amber-600">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg></div>
+                <div>
+                  <h3 class="text-xl font-semibold text-slate-900 mb-2">Email</h3><a href="mailto:info@104impact.com"
+                    class="text-gray-600 hover:text-amber-600 transition-colors">info@104impact.com</a>
                 </div>
-              </a>
-            </div>
-            
-            <div class="contact-item">
-              <a href="https://www.instagram.com/104impact/" target="_blank">
-                <div class="icon icon-instagram">
-                  <img src="./assets/icons/instagram.svg" alt="instagram" />
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-globe w-6 h-6 text-blue-600">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg></div>
+                <div>
+                  <h3 class="text-xl font-semibold text-slate-900 mb-2">Website</h3><a href="https://www.104impact.com"
+                    target="_blank" rel="noopener noreferrer"
+                    class="text-gray-600 hover:text-blue-600 transition-colors">www.104impact.com</a>
                 </div>
-              </a>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-map-pin w-6 h-6 text-emerald-600">
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                    </path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg></div>
+                <div>
+                  <h3 class="text-xl font-semibold text-slate-900 mb-2">Location</h3>
+                  <p class="text-gray-600">128 City Rd, London EC4V 2JN<br>United Kingdom</p>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 shadow-xl"
+            style="opacity: 1; transform: none;">
+            <form class="space-y-6">
+              <div><label class="block text-sm font-medium text-slate-900 mb-2">Name</label><input
+                  class="flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white border-gray-300"
+                  required="" placeholder="Your name" value=""></div>
+              <div><label class="block text-sm font-medium text-slate-900 mb-2">Email</label><input type="email"
+                  class="flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white border-gray-300"
+                  required="" placeholder="your@email.com" value=""></div>
+              <div><label class="block text-sm font-medium text-slate-900 mb-2">Message</label><textarea
+                  class="flex min-h-[60px] w-full rounded-md border px-3 py-2 text-base shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white border-gray-300"
+                  required="" rows="6" placeholder="Tell us about your venture or inquiry..."></textarea></div><button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 w-full bg-amber-500 hover:bg-amber-600 text-slate-900 py-6 text-lg font-medium"
+                type="submit">Send Message<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="lucide lucide-send ml-2 w-5 h-5">
+                  <path
+                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                  </path>
+                  <path d="m21.854 2.147-10.94 10.939"></path>
+                </svg></button>
+            </form>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- ===== Contact Form ===== -->
-        <div id="contact-form" class="contact-form">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" required />
-            </div>
+    <section class="py-12 px-4 bg-gray-50">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-sm text-gray-500 leading-relaxed">104 Impact Partners Ltd, a company incorporated in England and
+          Wales under Company Number 16344386, having its registered address at 128 City Rd, London EC4V 2JN ("104
+          Impact")
+          is not authorised or regulated by the Financial Conduct Authority and does not engage in regulated activities.
+          Our
+          advice is limited to fundraising strategy and investor introductions.</p>
+      </div>
+    </section>
+  </main>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="your@email.com" required />
-            </div>
 
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="6" placeholder="Tell us about your venture or inquiry..."
-                required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Send Message</button>
-          </form>
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 text-white"><svg viewBox="0 0 100 100" class="w-full h-full">
+              <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+              <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+            </svg></div><span class="text-xl font-light tracking-wider">104 IMPACT</span>
         </div>
+        <p class="text-gray-400 text-sm">From idea to scale, we help build lasting companies.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Quick Links</h3>
+        <a href="index.html" class="block text-gray-400 hover:text-amber-500 text-sm">Home</a>
+        <a href="about.html" class="block text-gray-400 hover:text-amber-500 text-sm">About</a>
+        <a href="contact.html" class="block text-gray-400 hover:text-amber-500 text-sm">Contact</a>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Contact</h3>
+        <p class="text-sm text-gray-400">info@104impact.com</p>
+        <p class="text-sm text-gray-400">www.104impact.com</p>
+        <p class="text-sm text-gray-400">128 City Rd, London EC4V 2JN</p>
       </div>
     </div>
-  </section>
-
-  <!-- ===== Global Network Section ===== -->
-  <section class="network-section">
-    <div class="container">
-      <div class="network-header">
-        <h2>A Global Network Built<br />For Scale & Credibility.</h2>
-      </div>
-
-      <div class="network-content">
-        <div class="network-text">
-          <p>
-            Our reach spans investors, corporates, institutions, and governments
-            across key markets.
-          </p>
-          <p>
-            This network enables us to position our companies for capital, growth,
-            and lasting influence.
-          </p>
-
-          <div class="network-legend">
-            <span class="legend-item">
-              <span class="dot dot-purple"></span> Institutions
-            </span>
-            <span class="legend-item">
-              <span class="dot dot-navy"></span> Partners
-            </span>
-          </div>
-        </div>
-
-        <div class="network-map">
-          <img src="./assets/images/world_map.webp" alt="Global Network Map" />
-          <div class="connections">
-            <span class="node node-purple" style="top: 45%; left: 25%;"></span>
-            <span class="node node-navy" style="top: 38%; left: 35%;"></span>
-            <span class="node node-purple" style="top: 50%; left: 50%;"></span>
-            <span class="node node-navy" style="top: 42%; left: 65%;"></span>
-            <span class="node node-purple" style="top: 55%; left: 70%;"></span>
-            <span class="node node-navy" style="top: 60%; left: 40%;"></span>
-            <span class="node node-purple" style="top: 65%; left: 80%;"></span>
-          </div>
-        </div>
-      </div>
+    <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400 mt-8">
+      © 2025 104 Impact Partners Ltd. All rights reserved.
     </div>
-  </section>
+  </footer>
 
-  <!-- ===== Partner Section ===== -->
-  <section class="hero-partner">
-    <div class="hero-overlay"></div>
+  <!-- JS for Scroll & Menu -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const heroBg = document.getElementById('heroBg');
 
-    <div class="hero-content">
-      <h1>Guiding the Future</h1>
-
-      <div class="flex-parent">
-        <div>
-          <h2>Partner With Us</h2>
-
-          <div class="contact-links">
-            <a href="mailto:info@104impact.com">info@104impact.com</a>
-            <span class="divider"></span>
-            <a href="#">www.104impact.com</a>
-          </div>
-        </div>
-
-        <p class="disclaimer">
-          104 Impact Partners Ltd, a company incorporated in England and Wales under Company Number 16344386,
-          having its registered address at 128 City Rd, London EC4V 2JN (“104 Impact”) is not authorised or regulated
-          by the Financial Conduct Authority and does not engage in regulated activities. Our advice is limited to
-          fundraising strategy and investor introductions.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <script src="js/main.js"></script>
+    menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY * 0.5;
+      heroBg.style.transform = `translateY(${y}px)`;
+    });
+  </script>
 </body>
 
 </html>

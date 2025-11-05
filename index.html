@@ -2,298 +2,547 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="We back founders solving the world's biggest problems. From first spark to global scale, 104 Impact is your long-term partner.">
-  <title>104 Impact - Guiding the Future</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>104 Impact | Guiding the Future</title>
+
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Theme -->
+  <link rel="stylesheet" href="theme.css" />
 </head>
 
-<body>
-  <!-- ===== Navbar ===== -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">
-        <img src="./assets/images/logo.png" alt="104 Impact Logo" />
+<body class="bg-white text-slate-900">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a class="flex items-center gap-3 group" href="index.html" data-discover="true">
+          <div class="w-8 h-8 text-slate-900 group-hover:text-amber-600 transition-colors duration-300"><svg
+              viewBox="0 0 100 100" class="w-full h-full">
+              <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+              <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+            </svg></div><span class="text-xl font-semibold tracking-wider text-slate-900">104 IMPACT</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-gray-700 hover:text-amber-600">Home</a>
+          <a href="about.html" class="text-sm font-medium text-gray-700 hover:text-amber-600">About</a>
+          <a href="contact.html" class="text-sm font-medium text-gray-700 hover:text-amber-600">Contact</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden p-2 text-slate-900 hover:text-amber-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white px-4 py-6 space-y-4">
+      <a href="index.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">Home</a>
+      <a href="about.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">About</a>
+      <a href="contact.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">Contact</a>
     </div>
   </header>
 
-  <!-- ===== Hero Section ===== -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Guiding The Future</h1>
-      <p class="subtitle">From idea to scale, we help build lasting companies</p>
-      <div class="divider"></div>
-      <p class="description">
-        Closing the gap of unmet needs with founders building lasting measurable impact
-      </p>
-      <a href="contact.html" class="btn btn-primary">
-        Get in Touch
-        <span class="arrow"> → </span>
-      </a>
-    </div>
-  </section>
+  <main class="pt-20">
 
-  <!-- ===== Who We Are Section ===== -->
-  <section class="who-we-are section--white">
-    <div class="container">
-      <h2 class="section-heading">Who We Are</h2>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900 text-center text-white">
+      <div id="heroBg" class="absolute inset-0 opacity-40 bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');">
+      </div>
 
-      <div class="who-grid">
-        <div class="who-text">
-          <div class="who-description">
-            <div class="card bg-gradient-orange-red">
-              <img src="./assets/icons/connect.svg" alt="connect">
-              <p>
-                104 Impact connects capital and founders building meaningful companies
-                across biotech, health tech, deep-tech & new energy.
-              </p>
-            </div>
+      <div class="relative z-10 px-4 max-w-5xl mx-auto">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 text-white"><svg viewBox="0 0 100 100" class="w-full h-full">
+              <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+              <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+            </svg></div>
+          <h2 class="text-2xl font-light text-white tracking-wider">104 IMPACT</h2>
+        </div>
 
-            <div class="card bg-gradient-amber-orange">
-              <img src="./assets/icons/partner.svg" alt="partner">
-              <p>
-                We partner from seed to scale, aligning success through shared ownership
-                and long-term relationships.
-              </p>
-            </div>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif leading-tight mb-8 animate-slide-up">Guiding The Future
+        </h1>
+
+        <p class="text-xl md:text-2xl text-gray-200 mb-12 font-light">From idea to scale, we help build lasting
+          companies</p>
+
+        <div class="w-24 h-px bg-white mx-auto mb-12"></div>
+
+        <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-light mb-12">Closing the gap of unmet needs
+          with founders building lasting measurable impact</p>
+
+        <a href="contact.html"
+          class="inline-flex items-center bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-md text-lg font-medium transition">
+          Get in Touch
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-5 h-5" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="py-24 px-4 bg-white">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 text-slate-900"><svg viewBox="0 0 100 100" class="w-full h-full">
+                <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+                <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                </line>
+                <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                </line>
+                <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round"></line>
+                <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor"
+                  stroke-width="3" stroke-linecap="round"></line>
+                <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+                <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              </svg></div>
           </div>
-
-          <a href="about.html" class="btn btn-secondary">
+          <h2 class="text-5xl md:text-6xl font-serif mb-8">Who We Are</h2>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            104 Impact connects capital and founders building meaningful companies across biotech, health tech,
+            deep-tech & new energy.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We partner from seed to scale, aligning success through shared ownership and long-term relationships.
+          </p>
+          <a href="about.html"
+            class="inline-flex items-center border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white px-6 py-3 rounded-md transition">
             Learn More About Us
-            <span class="arrow"> → </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 w-4 h-4">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
           </a>
-
-
         </div>
 
-        <div class="who-image">
-          <img src="./assets/images/about-globe.webp" alt="Connected Globe" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Our Focus Section ===== -->
-  <section class="our-focus">
-    <div class="container focus-layout">
-      <!-- Left Column -->
-      <div class="focus-text">
-        <div>
-          <h2>Our Focus</h2>
-          <p class="subtitle">
-            Where Impact Meets <br> High-growth Opportunity
-          </p>
-        </div>
-
-        <div class="focus-description">
-          <h3>
-            Impact as a Core Principle
-          </h3>
-          <p>
-            Impact isn’t a label — it’s embedded in everything we do. We
-            partner with ventures that create measurable, lasting change
-            through innovation and responsible growth.
-          </p>
-
-          <h3>
-            Purpose Meets Performance
-          </h3>
-          <p>
-            We back ventures who combine bold vision with strong execution,
-            addressing unmet needs across sectors where purpose drives
-            commercial success.
-          </p>
-
-          <h3>
-            Focused on High-Growth Industries
-          </h3>
-          <p>
-            Our portfolio targets transformative sectors from health tech and
-            sustainability to AI, data, and creative industries where innovation
-            fuels scalable, long-term opportunity.
-          </p>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072" alt="Connected Globe"
+            class="w-full h-[500px] object-cover rounded-2xl shadow-2xl">
         </div>
       </div>
+    </section>
 
-      <!-- Right Column -->
-      <div class="focus-cards">
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/healthtech.svg" alt="healthtech" />
-          </div>
-          <h3>Health Tech</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/biotech.svg" alt="biotech" />
-          </div>
-          <h3>Biotech</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/neurotech.svg" alt="Neurotech & AI" />
-          </div>
-          <h3>Neurotech & AI</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/infrastructure.svg" alt="Infrastructure
-& Data" />
-          </div>
-          <h3>Infrastructure
-            & Data</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/arts-culture.svg" alt="Arts & Culture" />
-          </div>
-          <h3>Arts & Culture</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/ip-media.svg" alt="IP / Media" />
-          </div>
-          <h3>IP / Media</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/consumer-goods.svg" alt="Consumer goods" />
-          </div>
-          <h3>Consumer goods</h3>
-        </div>
-
-        <div class="focus-card">
-          <div class="icon-circle">
-            <img src="./assets/icons/sustainability.svg" alt="Sustainability" />
-          </div>
-          <h3>Sustainability</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Our Values Section ===== -->
-  <section class="values-section">
-    <div class="container">
-      <h2 class="section-heading mb-0">Our Values & Approach</h2>
-
-      <div class="section-header">
-        <p class="section-subheading">
-          We place founders long-term goals at the centre of every decision. Our work is guided by clarity, research,
-          and
-          trust, helping founders scale with focus and integrity.
+    <!-- Our Focus -->
+    <section class="py-24 px-4 bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600 text-center text-slate-900">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-serif mb-6">Our Focus</h2>
+        <p class="text-xl text-slate-800 max-w-3xl mx-auto font-light mb-16">Where Impact Meets High-growth Opportunity
         </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Health Tech</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Biotech</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Neurotech &amp; AI</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Infrastructure &amp; Data</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Sustainability</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Consumer Goods</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">IP / Media</h3>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group"
+            style="opacity: 1; transform: none;">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-earth w-6 h-6 text-white">
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-white text-center">Arts &amp; Culture</h3>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="values-grid">
-        <div class="value-card bg-gradient-teal-emerald">
-          <div class="icon">
-            <img src="./assets/icons/alignment.svg" alt="alignment">
+    <!-- Values -->
+    <section class="py-24 px-4 bg-gray-50 text-center">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-serif mb-6">Our Values & Approach</h2>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-16 leading-relaxed">We place founders' long-term goals at
+          the centre of every decision. Our work is guided by clarity, research, and trust, helping founders scale with
+          focus and integrity.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl p-8 text-white shadow-xl hover:scale-105 transition-transform duration-300"
+            style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-target w-12 h-12 mb-6">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+            <h3 class="text-2xl font-serif mb-4">Alignment</h3>
+            <p class="text-white/90 leading-relaxed font-light">We combine founder's goals and vision to foster a
+              supportive and
+              unified journey, ensuring founders are well positioned to make a lasting impact</p>
           </div>
-          <h3>Alignment</h3>
-          <p>
-            We combine founder’s goals and vision to
-            foster a supportive and unified journey,
-            ensuring founders are well positioned to
-            make a lasting impact
-          </p>
-        </div>
-
-        <div class="value-card bg-gradient-orange-red">
-          <div class="icon">
-            <img src="./assets/icons/innovation.svg" alt="innovation">
+          <div
+            class="bg-gradient-to-br from-orange-600 to-red-700 rounded-2xl p-8 text-white shadow-xl hover:scale-105 transition-transform duration-300"
+            style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-sparkles w-12 h-12 mb-6">
+              <path
+                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+              </path>
+              <path d="M20 3v4"></path>
+              <path d="M22 5h-4"></path>
+              <path d="M4 17v2"></path>
+              <path d="M5 18H3"></path>
+            </svg>
+            <h3 class="text-2xl font-serif mb-4">Innovation</h3>
+            <p class="text-white/90 leading-relaxed font-light">Innovation is essential for addressing the critical
+              issues
+              facing our planet and the journey towards significant change is driven by groundbreaking ideas</p>
           </div>
-          <h3>Innovation</h3>
-          <p>
-            Innovation is essential for addressing the
-            critical issues facing our planet and the
-            journey towards significant change is driven by groundbreaking ideas and transformative solutions.
-          </p>
-        </div>
-
-        <div class="value-card bg-gradient-purple-indigo">
-          <div class="icon">
-            <img src="./assets/icons/longevity.svg" alt="longevity">
+          <div
+            class="bg-gradient-to-br from-purple-600 to-indigo-700 rounded-2xl p-8 text-white shadow-xl hover:scale-105 transition-transform duration-300"
+            style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-trending-up w-12 h-12 mb-6">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+              <polyline points="16 7 22 7 22 13"></polyline>
+            </svg>
+            <h3 class="text-2xl font-serif mb-4">Longevity</h3>
+            <p class="text-white/90 leading-relaxed font-light">We focus on forming long-term relationships, offering
+              founders
+              continuous support and collaboration with our global network</p>
           </div>
-          <h3>Longevity</h3>
-          <p>
-            We focus on forming long-term relationships, offering founders continuous support and collaboration with our
-            global network of venture partners and investors
-
-          </p>
-        </div>
-
-        <div class="value-card bg-gradient-amber-orange">
-          <div class="icon">
-            <img src="./assets/icons/transparency.svg" alt="transparency">
+          <div
+            class="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl hover:scale-105 transition-transform duration-300"
+            style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-earth w-12 h-12 mb-6">
+              <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+              <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+              <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+              <circle cx="12" cy="12" r="10"></circle>
+            </svg>
+            <h3 class="text-2xl font-serif mb-4">Transparency</h3>
+            <p class="text-white/90 leading-relaxed font-light">Transparency in processes and outcomes is essential to
+              building
+              trust and ensuring accountability to our core values</p>
           </div>
-          <h3>Transparency</h3>
-          <p>
-            Transparency in processes and outcomes is
-            essential to building trust and ensuring
-            accountability to our core values, aligning our actions with our commitment to creating lasting impact
-          </p>
         </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-4 bg-gradient-to-b from-slate-900 to-blue-950 text-white text-center">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-serif mb-6">Partner With Us</h2>
+        <p class="text-xl text-gray-300 mb-8 font-light">Building lasting impact together</p>
+        <a href="contact.html"
+          class="inline-flex items-center bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-md text-lg font-medium transition">
+          Get In Touch
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-5 h-5" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 text-white"><svg viewBox="0 0 100 100" class="w-full h-full">
+              <circle cx="50" cy="50" r="12" fill="currentColor"></circle>
+              <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="68.47759065022574" y1="57.6536686473018" x2="82.33578363789503" y2="63.39392013277814"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="64.14213562373095" x2="74.74873734152916" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="68.47759065022574" x2="63.39392013277814" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              </line>
+              <line x1="42.34633135269821" y1="68.47759065022574" x2="36.60607986722186" y2="82.33578363789503"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="64.14213562373095" x2="25.25126265847084" y2="74.74873734152916"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="31.522409349774264" y1="57.6536686473018" x2="17.664216362104966" y2="63.39392013277815"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="30" y1="50" x2="15" y2="50.00000000000001" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="31.52240934977426" y1="42.346331352698215" x2="17.66421636210496" y2="36.60607986722188"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="35.85786437626905" y1="35.85786437626905" x2="25.251262658470832" y2="25.25126265847084"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="42.34633135269821" y1="31.522409349774264" x2="36.606079867221865" y2="17.66421636210496"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="49.99999999999999" y1="30" x2="49.99999999999999" y2="15" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+              <line x1="57.6536686473018" y1="31.522409349774268" x2="63.39392013277815" y2="17.664216362104966"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="64.14213562373095" y1="35.85786437626905" x2="74.74873734152916" y2="25.251262658470832"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+              <line x1="68.47759065022574" y1="42.34633135269821" x2="82.33578363789505" y2="36.606079867221865"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"></line>
+            </svg></div><span class="text-xl font-light tracking-wider">104 IMPACT</span>
+        </div>
+        <p class="text-gray-400 text-sm">From idea to scale, we help build lasting companies.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Quick Links</h3>
+        <a href="index.html" class="block text-gray-400 hover:text-amber-500 text-sm">Home</a>
+        <a href="about.html" class="block text-gray-400 hover:text-amber-500 text-sm">About</a>
+        <a href="contact.html" class="block text-gray-400 hover:text-amber-500 text-sm">Contact</a>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Contact</h3>
+        <p class="text-sm text-gray-400">info@104impact.com</p>
+        <p class="text-sm text-gray-400">www.104impact.com</p>
+        <p class="text-sm text-gray-400">128 City Rd, London EC4V 2JN</p>
       </div>
     </div>
-  </section>
-
-  <!-- ===== Partner Section ===== -->
-  <section class="hero-partner">
-    <div class="hero-overlay"></div>
-  
-    <div class="hero-content">
-      <h1>Guiding the Future</h1>
-      
-      <div class="flex-parent">
-        <div>
-          <h2>Partner With Us</h2>
-        
-          <div class="contact-links">
-            <a href="mailto:info@104impact.com">info@104impact.com</a>
-            <span class="divider"></span>
-            <a href="#">www.104impact.com</a>
-          </div>
-        </div>
-        
-        <p class="disclaimer">
-          104 Impact Partners Ltd, a company incorporated in England and Wales under Company Number 16344386,
-          having its registered address at 128 City Rd, London EC4V 2JN (“104 Impact”) is not authorised or regulated
-          by the Financial Conduct Authority and does not engage in regulated activities. Our advice is limited to
-          fundraising strategy and investor introductions.
-        </p>
-      </div>
+    <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400 mt-8">
+      © 2025 104 Impact Partners Ltd. All rights reserved.
     </div>
-  </section>
+  </footer>
 
-  <script src="js/main.js"></script>
+  <!-- JS for Scroll & Menu -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const heroBg = document.getElementById('heroBg');
+
+    menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY * 0.5;
+      heroBg.style.transform = `translateY(${y}px)`;
+    });
+  </script>
 </body>
 
 </html>
