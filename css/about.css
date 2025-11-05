@@ -9,10 +9,17 @@
 
 .founder-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   max-width: 1300px;
   margin: 0 auto;
   align-items: stretch;
+}
+
+.joy-container {
+  grid-template-columns: 2fr 1fr;
+}
+
+.dipam-container {
+  grid-template-columns: 1fr 2fr;
 }
 
 .founder-text {
@@ -130,6 +137,10 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   display: block;
+}
+
+.dipam-photo img {
+  object-position: center -20px;
 }
 
 /* ===== Member Info ===== */
