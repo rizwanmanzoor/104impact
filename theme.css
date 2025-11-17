@@ -185,7 +185,6 @@ body {
 
 .hero-partner .hero-content {
   position: relative;
-  height: 80%;
   z-index: 2;
   max-width: 900px;
   padding: 0 24px;
@@ -223,7 +222,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
   margin-bottom: 48px;
 }
 
