@@ -217,7 +217,8 @@
               allows
               us to assess opportunities through multiple lenses, unlocking insight others might miss.</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- joy -->
             <div class="text-center" style="opacity: 1; transform: none;">
               <div class="relative mb-6"><img src="./assets/images/joy.webp" alt="Joy Abiola"
                   class="w-60 h-60 rounded-full mx-auto object-cover object-top bg-white border-4 border-white/10 shadow-2xl">
@@ -226,36 +227,87 @@
               <p class="text-amber-400 mb-2 font-medium text-xl">Founder, 104 Impact</p>
               <p class="text-white text-lg mb-4 font-medium">Supporting founders who strengthen systems and communities.
               </p>
-              <p class="text-gray-300 text-lg leading-relaxed" style="text-align:justify;max-width:98%">
-                I began my career as an analyst at Pantheon. I then moved into secondaries advisory and primary fund
-                placements. I then joined Citi Private Bank, where I worked on the private equity team with families and
-                institutions. I then moved into venture, where I worked with technology and growth stage companies, and
-                where I met Dipam.
-                This path gave me a clear view across the capital stack. Over more than a decade, I built relationships
-                with allocators
-                and partners across Africa, Europe, the GCC and the United States. I supported mandates across a wide
-                range of sectors
-                and regions, with more than one billion in total capital allocation during this period. The birth of my
-                daughter during
-                a time of global uncertainty shifted my focus. I became intent on building a more humane and future
-                focused way of
-                supporting the ecosystem.
-                <br><br>
-                I created 104 Impact to act as a steady partner to founders who work on systemic issues. At the core of the firm is a
-                simple belief, that innovation should support people and planet and not take from them. I work with care and intention,
-                aligning investors with missions that matter while keeping structure, risk and accountability in view.
-                104 Impact provides capital strategy, structural guidance and long term support to founder led businesses working for
-                impact. Our strength sits in emotional intelligence, clear frameworks and the ability to connect groups that do not
-                often meet.
-                <br><br>
-                My value is the ability to pair financial rigour with empathy. I know how to hold complexity, build trust and support
-                companies not only to raise capital but to use it with clarity and responsibility. I am trusted for my judgement and for
-                my belief in long term potential.
-                With a family background rooted in democracy and public service, I created 104 Impact to help address the gaps that hold
-                society back. I believe in supporting people who take on difficult problems and in building systems where responsible
-                change can grow over time.
-              </p>
+              <button id="openJoyModalBtn"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-10 rounded-md bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-6 text-lg font-medium">Read
+                More</button>
+
+              <div id="modalJoyOverlay"
+                class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden items-center justify-center z-[999] transition-opacity duration-300">
+
+                <!-- Joy Modal -->
+                <div id="joymodal"
+                  class="bg-white rounded-2xl shadow-2xl max-w-5xl w-full p-8 relative transform scale-95 opacity-0 transition-all duration-300">
+
+                  <!-- Close Button -->
+                  <button id="joycloseModalBtn"
+                    class="absolute top-4 right-4 text-slate-600 hover:text-slate-900 transition font-semibold rounded-full px-[6px] py-[1px] border border-gray-500 hover:border-gray-800 hover:bg-gray-100">
+                    ✕
+                  </button>
+
+                  <!-- Content -->
+                  <h3 class="text-4xl text-slate-900 mb-2 text-start">Joy Abiola</h3>
+                  <p class="text-amber-400 mb-2 font-medium text-xl text-start">Founder, 104 Impact</p>
+
+                  <div class="max-h-[60vh] overflow-auto">
+                    <p class="text-gray-700 leading-relaxed text-md text-start p-1">
+                      I began my career as an analyst at Pantheon. I then moved into secondaries advisory and primary
+                      fund
+                      placements. I then joined Citi Private Bank, where I worked on the private equity team with
+                      families and
+                      institutions. I then moved into venture, where I worked with technology and growth stage
+                      companies, and
+                      where I met Dipam.
+                      This path gave me a clear view across the capital stack. Over more than a decade, I built
+                      relationships
+                      with allocators
+                      and partners across Africa, Europe, the GCC and the United States. I supported mandates across a
+                      wide
+                      range of sectors
+                      and regions, with more than one billion in total capital allocation during this period. The birth
+                      of my
+                      daughter during
+                      a time of global uncertainty shifted my focus. I became intent on building a more humane and
+                      future
+                      focused way of
+                      supporting the ecosystem.
+                      <br><br>
+                      I created 104 Impact to act as a steady partner to founders who work on systemic issues. At the
+                      core of
+                      the firm is a
+                      simple belief, that innovation should support people and planet and not take from them. I work
+                      with care
+                      and intention,
+                      aligning investors with missions that matter while keeping structure, risk and accountability in
+                      view.
+                      104 Impact provides capital strategy, structural guidance and long term support to founder led
+                      businesses working for
+                      impact. Our strength sits in emotional intelligence, clear frameworks and the ability to connect
+                      groups
+                      that do not
+                      often meet.
+                      <br><br>
+                      My value is the ability to pair financial rigour with empathy. I know how to hold complexity,
+                      build
+                      trust and support
+                      companies not only to raise capital but to use it with clarity and responsibility. I am trusted
+                      for my
+                      judgement and for
+                      my belief in long term potential.
+                      With a family background rooted in democracy and public service, I created 104 Impact to help
+                      address
+                      the gaps that hold
+                      society back. I believe in supporting people who take on difficult problems and in building
+                      systems
+                      where responsible
+                      change can grow over time.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
             </div>
+
+            <!-- dipam -->
             <div class="text-center" style="opacity: 1; transform: none;">
               <div class="relative mb-6">
                 <img src="./assets/images/dipam.webp" alt="Dipam Patel"
@@ -263,30 +315,90 @@
                   style="object-position: 50% -20px;">
               </div>
               <h3 class="text-4xl text-white mb-2">Dipam Patel</h3>
-              <p class="text-amber-400 text-xl mb-4 font-medium">Co-Founder, 104 Impact</p>
+              <p class="text-amber-400 text-xl mb-2 font-medium">Co-Founder, 104 Impact</p>
               <p class="text-white text-lg mb-4 font-medium">
                 Impact shaped by deep involvement, clear insight and trusted partnership.
               </p>
-              <p class="text-gray-300 text-lg leading-relaxed" style="text-align:justify;max-width:98%">
-                I began my career in investment banking, advising and supporting high growth technology companies through mergers,
-                acquisitions and venture transactions. I then worked at Bryan Garnier and GP Bullhound, where I specialised in Software
-                and Consumer Technology and oversaw more than €2 billion in completed transactions. These years gave me a detailed
-                understanding of what supports sustainable growth, not only financial discipline but operational strength and strategic
-                clarity.
-                My approach to impact is grounded in deep involvement and expertise. I immerse myself in each project, relationship and
-                venture with the aim of creating outcomes that are rooted in value. For me, impact is not defined by a sector or model
-                but by the quality of engagement, insight and partnership I bring to the work.
-                <br><br>
-                In recent years, I applied this philosophy to my own ventures. This includes D2P Autoparts, an e-commerce company where
-                I work across supplier relationships, technology systems, international reach and team development. My work there
-                reflects my view that meaningful progress comes from being closely involved in the day to day reality of a business.
-                As a co-founder of 104 Impact, I continue to build on this principle. I form long term partnerships, support careful
-                decision making and help founders turn their plans into steady and durable progress. My role sits in linking strategy
-                with practical steps and in helping businesses create value with clarity and purpose.
-                <br><br>
-                My background across investment banking, private markets and hands on operations shapes how I work today. I combine
-                financial rigour with a practical understanding of how companies grow. I am trusted for my judgement and for my
-                commitment to supporting founders over time.
+              <button id="openDipamModalBtn"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-10 rounded-md bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-6 text-lg font-medium">Read
+                More</button>
+
+              <div id="modalDipamOverlay"
+                class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden items-center justify-center z-[999] transition-opacity duration-300">
+
+                <!-- Dipam Modal -->
+                <div id="dipammodal"
+                  class="bg-white rounded-2xl shadow-2xl max-w-5xl w-full p-8 relative transform scale-95 opacity-0 transition-all duration-300">
+
+                  <!-- Close Button -->
+                  <button id="dipamcloseModalBtn"
+                    class="absolute top-4 right-4 text-slate-600 hover:text-slate-900 transition font-semibold rounded-full px-[6px] py-[1px] border border-gray-500 hover:border-gray-800 hover:bg-gray-100">
+                    ✕
+                  </button>
+
+                  <!-- Content -->
+                  <h3 class="text-4xl text-slate-900 mb-2 text-start">Dipam Patel</h3>
+                  <p class="text-amber-400 mb-2 font-medium text-xl text-start">Co-Founder, 104 Impact</p>
+
+                  <div class="max-h-[60vh] overflow-auto">
+                    <p class="text-gray-700 leading-relaxed text-md text-start p-1">
+                      I began my career in investment banking, advising and supporting high growth technology companies
+                      through mergers,
+                      acquisitions and venture transactions. I then worked at Bryan Garnier and GP Bullhound, where I
+                      specialised in Software
+                      and Consumer Technology and oversaw more than €2 billion in completed transactions. These years
+                      gave me
+                      a detailed
+                      understanding of what supports sustainable growth, not only financial discipline but operational
+                      strength and strategic
+                      clarity.
+                      My approach to impact is grounded in deep involvement and expertise. I immerse myself in each
+                      project,
+                      relationship and
+                      venture with the aim of creating outcomes that are rooted in value. For me, impact is not defined
+                      by a
+                      sector or model
+                      but by the quality of engagement, insight and partnership I bring to the work.
+                      <br><br>
+                      In recent years, I applied this philosophy to my own ventures. This includes D2P Autoparts, an
+                      e-commerce company where
+                      I work across supplier relationships, technology systems, international reach and team
+                      development. My
+                      work there
+                      reflects my view that meaningful progress comes from being closely involved in the day to day
+                      reality of
+                      a business.
+                      As a co-founder of 104 Impact, I continue to build on this principle. I form long term
+                      partnerships,
+                      support careful
+                      decision making and help founders turn their plans into steady and durable progress. My role sits
+                      in
+                      linking strategy
+                      with practical steps and in helping businesses create value with clarity and purpose.
+                      <br><br>
+                      My background across investment banking, private markets and hands on operations shapes how I work
+                      today. I combine
+                      financial rigour with a practical understanding of how companies grow. I am trusted for my
+                      judgement and
+                      for my
+                      commitment to supporting founders over time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- max -->
+            <div class="text-center" style="opacity: 1; transform: none;">
+              <div class="relative mb-6">
+                <img src="./assets/images/dipam.webp" alt="Dipam Patel"
+                  class="w-60 h-60 rounded-full mx-auto object-cover bg-white border-4 border-white/10 shadow-2xl"
+                  style="object-position: 50% -20px;">
+              </div>
+              <h3 class="text-4xl text-white mb-2">Max</h3>
+              <p class="text-amber-400 text-xl mb-4 font-medium">Co-Founder, 104 Impact</p>
+              <p class="text-white text-lg mb-4 font-medium">
+                Impact shaped by deep involvement, clear insight and trusted partnership.
               </p>
             </div>
           </div>
@@ -381,6 +493,78 @@
       heroBg.style.transform = `translateY(${y}px)`;
     });
   </script>
+
+  <!-- joy modal -->
+  <script>
+    const openJoyBtn = document.getElementById("openJoyModalBtn");
+    const openDipamBtn = document.getElementById("openDipamModalBtn");
+
+    const joycloseBtn = document.getElementById("joycloseModalBtn");
+    const dipamcloseBtn = document.getElementById("dipamcloseModalBtn");
+
+    const joyoverlay = document.getElementById("modalJoyOverlay");
+    const dipamoverlay = document.getElementById("modalDipamOverlay");
+
+    const joymodal = document.getElementById("joymodal");
+    const dipammodal = document.getElementById("dipammodal");
+
+    // OPEN JOY MODAL
+    openJoyBtn.addEventListener("click", () => {
+      joyoverlay.classList.remove("hidden");
+
+      // Animation
+      setTimeout(() => {
+        joyoverlay.classList.add("flex");
+        joymodal.classList.remove("opacity-0", "scale-95");
+        joymodal.classList.add("opacity-100", "scale-100");
+      }, 20);
+    });
+
+    // OPEN DIPAM MODAL
+    openDipamBtn.addEventListener("click", () => {
+      dipamoverlay.classList.remove("hidden");
+
+      // Animation
+      setTimeout(() => {
+        dipamoverlay.classList.add("flex");
+        dipammodal.classList.remove("opacity-0", "scale-95");
+        dipammodal.classList.add("opacity-100", "scale-100");
+      }, 20);
+    });
+
+    // CLOSE MODAL
+    function joycloseModal() {
+      joymodal.classList.add("opacity-0", "scale-95");
+      joymodal.classList.remove("opacity-100", "scale-100");
+
+      setTimeout(() => {
+        joyoverlay.classList.add("hidden");
+        joyoverlay.classList.remove("flex");
+      }, 200);
+    }
+
+    function dipamcloseModal() {
+      dipammodal.classList.add("opacity-0", "scale-95");
+      dipammodal.classList.remove("opacity-100", "scale-100");
+
+      setTimeout(() => {
+        dipamoverlay.classList.add("hidden");
+        dipamoverlay.classList.remove("flex");
+      }, 200);
+    }
+
+    joycloseBtn.addEventListener("click", joycloseModal);
+    dipamcloseBtn.addEventListener("click", dipamcloseModal);
+
+    // CLOSE WHEN CLICKING OUTSIDE MODAL
+    joyoverlay.addEventListener("click", (e) => {
+      if (e.target === joyoverlay) joycloseModal();
+    });
+    dipamoverlay.addEventListener("click", (e) => {
+      if (e.target === dipamoverlay) dipamcloseModal();
+    });
+  </script>
+
 </body>
 
 </html>
