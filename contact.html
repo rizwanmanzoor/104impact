@@ -205,6 +205,44 @@
                   </div>
                 </div>
 
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label htmlFor="founder-stage" class="text-slate-900 font-medium mb-2">
+                      Stage
+                    </label>
+                    <select id="founder-stage" name="founder-stage" required
+                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
+                      <option value="" disabled selected>Select stage</option>
+                      <option value="Idea">Idea</option>
+                      <option value="Pre-seed">Pre-seed</option>
+                      <option value="Seed">Seed</option>
+                      <option value="Series A">Series A</option>
+                      <option value="Series B">Series B</option>
+                      <option value="Series C+">Series C+</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="founder-sector" className="text-slate-900 font-medium mb-2">
+                      Sector
+                    </label>
+                    <select id="founder-sector" name="founder-sector" required
+                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
+                      <option value="" disabled selected>Select sector</option>
+                      <option value="Health tech">Health tech</option>
+                      <option value="Biotech">Biotech</option>
+                      <option value="Neurotech">Neurotech</option>
+                      <option value="AI">AI</option>
+                      <option value="Infrastructure and data">Infrastructure and data</option>
+                      <option value="Sustainability">Sustainability</option>
+                      <option value="Consumer goods">Consumer goods</option>
+                      <option value="IP and media">IP and media</option>
+                      <option value="Arts and culture">Arts and culture</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
                 <div class="mb-6">
                   <label class="font-medium text-slate-900 mb-2 block">Support Description *</label>
                   <textarea required rows="4"
@@ -227,9 +265,13 @@
                 </div>
 
                 <button type="submit"
-                  class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-4 text-lg font-semibold rounded-md shadow-lg">
+                  class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-2 text-lg font-medium rounded-md shadow-lg">
                   Submit Founder Application
                 </button>
+
+                <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+                  By submitting this form, you agree that 104 Impact Partners Ltd may review and store the information provided for the purpose of responding to your enquiry. We do not share your information with third parties.
+                </p>
               </form>
             </div>
 
@@ -265,9 +307,14 @@
                 </div>
 
                 <button type="submit"
-                  class="w-full bg-gradient-to-r from-teal-600 to-emerald-700 hover:from-teal-700 hover:to-emerald-800 text-white py-4 text-lg font-semibold rounded-md shadow-lg">
+                  class="w-full bg-gradient-to-r from-teal-600 to-emerald-700 hover:from-teal-700 hover:to-emerald-800 text-white py-2 text-lg font-medium rounded-md shadow-lg">
                   Submit Partner Application
                 </button>
+                
+                <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+                  By submitting this form, you agree that 104 Impact Partners Ltd may review and store the information provided for the
+                  purpose of responding to your enquiry. We do not share your information with third parties.
+                </p>
               </form>
             </div>
           </div>
