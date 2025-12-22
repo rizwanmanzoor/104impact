@@ -55,7 +55,7 @@
   --color-gray-900: #111827;
 
   /* Typography */
-  --font-sans: "PP Neue Montreal", Inter, system-ui, Arial, sans-serif;
+  --font-sans: "PP Neue Montreal";
   --font-serif: "PP Writer", Georgia, Times, serif;
 
   /* Transitions */
@@ -300,4 +300,8 @@ body {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+html, body, button, h1, h2, h3, h4, h5, h6, p, a, span {
+  font-family: 'PP Neue Montreal' !important;
 }
