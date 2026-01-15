@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>1O4 Impact | Guiding the Future</title>
 
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -96,14 +98,14 @@
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label class="font-medium text-slate-900 mb-2 block">Name *</label>
-                    <input type="text" required
+                    <input type="text" name="Name" required
                       class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
                       placeholder="Your full name">
                   </div>
 
                   <div>
                     <label class="font-medium text-slate-900 mb-2 block">Email *</label>
-                    <input type="email" required
+                    <input type="email" name="Email" required
                       class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
                       placeholder="your@email.com">
                   </div>
@@ -112,14 +114,14 @@
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label class="font-medium text-slate-900 mb-2 block">Company *</label>
-                    <input type="text" required
+                    <input type="text" name="Company" required
                       class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
                       placeholder="Company name">
                   </div>
 
                   <div>
                     <label class="font-medium text-slate-900 mb-2 block">Website</label>
-                    <input type="url"
+                    <input type="url" name="Website"
                       class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
                       placeholder="https://yourcompany.com">
                   </div>
@@ -127,10 +129,10 @@
 
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="founder-stage" class="text-slate-900 font-medium mb-2">
+                    <label htmlFor="Stage" class="text-slate-900 font-medium mb-2">
                       Stage
                     </label>
-                    <select id="founder-stage" name="founder-stage" required
+                    <select id="Stage" name="Stage" required
                       class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
                       <option value="" disabled selected>Select stage</option>
                       <option value="Idea">Idea</option>
@@ -143,10 +145,10 @@
                   </div>
 
                   <div>
-                    <label htmlFor="founder-sector" className="text-slate-900 font-medium mb-2">
+                    <label htmlFor="Sector" className="text-slate-900 font-medium mb-2">
                       Sector
                     </label>
-                    <select id="founder-sector" name="founder-sector" required
+                    <select id="Sector" name="Sector" required
                       class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
                       <option value="" disabled selected>Select sector</option>
                       <option value="Health tech">Health tech</option><option value="Health tech">Women's Health</option>
@@ -165,14 +167,14 @@
 
                 <div class="mb-6">
                   <label class="font-medium text-slate-900 mb-2 block">Support Description *</label>
-                  <textarea required rows="4"
+                  <textarea name="Support Description" required rows="4"
                     class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
                     placeholder="Describe the specific support you're looking for..."></textarea>
                 </div>
 
                 <div class="mb-6">
                   <label class="font-medium text-slate-900 mb-2 block">Short Pitch *</label>
-                  <textarea required rows="5"
+                  <textarea name="Short Pitch" required rows="5"
                     class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
                     placeholder="Tell us about your company..."></textarea>
                 </div>
