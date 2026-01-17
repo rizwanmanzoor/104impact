@@ -1,386 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1O4 Impact | Guiding the Future</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1O4 Impact | Guiding the Future</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Theme -->
+    <link rel="stylesheet" href="theme.css" />
+  </head>
 
-  <!-- Theme -->
-  <link rel="stylesheet" href="theme.css" />
-</head>
+  <body class="bg-white text-slate-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/95">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <img src="./assets/images/logo.png" width="200" alt="104 impact" />
+          <br />
 
-<body class="bg-white text-slate-900">
-  <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-black/95">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <img src="./assets/images/logo.png" width="200" alt="104 impact"> <br />
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="index.html"
+              class="text-sm font-medium text-white hover:text-amber-600"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-medium text-white hover:text-amber-600"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="text-sm font-medium text-white hover:text-amber-600"
+              >Contact</a
+            >
+          </nav>
 
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="text-sm font-medium text-white hover:text-amber-600">Home</a>
-          <a href="about.html" class="text-sm font-medium text-white hover:text-amber-600">About</a>
-          <a href="contact.html" class="text-sm font-medium text-white hover:text-amber-600">Contact</a>
-        </nav>
-
-        <button id="menuBtn" class="md:hidden p-2 text-white hover:text-amber-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white px-4 py-6 space-y-4">
-      <a href="index.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">Home</a>
-      <a href="about.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">About</a>
-      <a href="contact.html" class="block text-base font-medium text-gray-700 hover:text-amber-600">Contact</a>
-    </div>
-  </header>
-
-  <main class="pt-20">
-    <section
-      class="hidden relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900">
-      <div class="absolute inset-0 opacity-30"
-        style="background-image: url(&quot;https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2072&quot;); background-size: cover; background-position: center center;">
-      </div>
-      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div style="opacity: 1; transform: none;">
-          <div class="inline-flex items-center gap-3 mb-6">
-            <img src="./assets/images/logo.png" width="200" alt="104 impact">
-          </div>
-          <h1 class="text-5xl md:text-7xl font-sans text-white mb-6">Partner With Us</h1>
-          <p class="text-xl text-gray-200 font-light">Let's build the future together</p>
+          <button
+            id="menuBtn"
+            class="md:hidden p-2 text-white hover:text-amber-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-    </section>
 
-    <section class="py-24 px-4">
-      <div class="max-w-7xl mx-auto">
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden border-t border-gray-200 bg-white px-4 py-6 space-y-4"
+      >
+        <a
+          href="index.html"
+          class="block text-base font-medium text-gray-700 hover:text-amber-600"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block text-base font-medium text-gray-700 hover:text-amber-600"
+          >About</a
+        >
+        <a
+          href="contact.html"
+          class="block text-base font-medium text-gray-700 hover:text-amber-600"
+          >Contact</a
+        >
+      </div>
+    </header>
 
-        <!-- Heading -->
-        <div class="text-center mb-12 fade-up">
-          <h2 class="text-4xl md:text-5xl font-serif text-slate-900 mb-4">
-            Apply to Partner
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Whether you're a founder building meaningful impact or an investor seeking aligned opportunities
-          </p>
-        </div>
-
-        <!-- Tabs Wrapper -->
-        <div id="formWrapper" class="fade-up delay-200">
-          <!-- Tabs -->
-          <div class="max-w-5xl mx-auto">
-            <div
-              class="grid w-full grid-cols-2 mb-12 h-auto p-2 bg-gradient-to-r from-slate-100 to-gray-100 rounded-xl">
-              <button class="tab-btn py-4 font-semibold rounded-lg transition-all duration-300 text-slate-700"
-                data-tab="founderTab" id="founderBtn">
-                Founder Application
-              </button>
-
-              <button class="tab-btn py-4 font-semibold rounded-lg transition-all duration-300 text-slate-700"
-                data-tab="partnerTab" id="partnerBtn">
-                Impact Partner Application
-              </button>
+    <main class="pt-20">
+      <section
+        class="hidden relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900"
+      >
+        <div
+          class="absolute inset-0 opacity-30"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2072');
+            background-size: cover;
+            background-position: center center;
+          "
+        ></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <div style="opacity: 1; transform: none">
+            <div class="inline-flex items-center gap-3 mb-6">
+              <img
+                src="./assets/images/logo.png"
+                width="200"
+                alt="104 impact"
+              />
             </div>
+            <h1 class="text-5xl md:text-7xl font-sans text-white mb-6">
+              Partner With Us
+            </h1>
+            <p class="text-xl text-gray-200 font-light">
+              Let's build the future together
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <!-- Founder Form -->
-            <div id="founderTab" class="tab-content block">
-              <form id="founderForm"
-                class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 shadow-xl">
+      <section class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Heading -->
+          <div class="text-center mb-12 fade-up">
+            <h2 class="text-4xl md:text-5xl font-serif text-slate-900 mb-4">
+              Apply to Partner
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Whether you're a founder building meaningful impact or an investor
+              seeking aligned opportunities
+            </p>
+          </div>
 
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Name *</label>
-                    <input type="text" name="Name" required
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
-                      placeholder="Your full name">
-                  </div>
-
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Email *</label>
-                    <input type="email" name="Email" required
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
-                      placeholder="your@email.com">
-                  </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Company *</label>
-                    <input type="text" name="Company" required
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
-                      placeholder="Company name">
-                  </div>
-
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Website</label>
-                    <input type="url" name="Website"
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
-                      placeholder="https://yourcompany.com">
-                  </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="Stage" class="text-slate-900 font-medium mb-2">
-                      Stage
-                    </label>
-                    <select id="Stage" name="Stage" required
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
-                      <option value="" disabled selected>Select stage</option>
-                      <option value="Idea">Idea</option>
-                      <option value="Pre-seed">Pre-seed</option>
-                      <option value="Seed">Seed</option>
-                      <option value="Series A">Series A</option>
-                      <option value="Series B">Series B</option>
-                      <option value="Series C+">Series C+</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="Sector" className="text-slate-900 font-medium mb-2">
-                      Sector
-                    </label>
-                    <select id="Sector" name="Sector" required
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
-                      <option value="" disabled selected>Select sector</option>
-                      <option value="Health tech">Health tech</option><option value="Health tech">Women's Health</option>
-                      <option value="Biotech">Biotech</option>
-                      <option value="Neurotech">Neurotech</option>
-                      <option value="AI">AI</option>
-                      <option value="Infrastructure and data">Infrastructure and data</option>
-                      <option value="Sustainability">Sustainability</option>
-                      <option value="Consumer goods">Consumer goods</option>
-                      <option value="IP and media">IP and media</option>
-                      <option value="Arts and culture">Arts and culture</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mb-6">
-                  <label class="font-medium text-slate-900 mb-2 block">Support Description *</label>
-                  <textarea name="Support Description" required rows="4"
-                    class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
-                    placeholder="Describe the specific support you're looking for..."></textarea>
-                </div>
-
-                <div class="mb-6">
-                  <label class="font-medium text-slate-900 mb-2 block">Short Pitch *</label>
-                  <textarea name="Short Pitch" required rows="5"
-                    class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
-                    placeholder="Tell us about your company..."></textarea>
-                </div>
-
-                <div class="mb-8">
-                  <label class="font-medium text-slate-900 mb-2 block">Pitch Deck (Optional)</label>
-                  <input id="deckFile" type="file" accept=".pdf,.ppt,.pptx"
-                    class="w-full p-3 border-0 rounded bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:bg-gray-200 file:text-slate-900">
-                  <p id="fileName" class="text-sm text-gray-600 mt-2"></p>
-                </div>
-
-                <button type="submit"
-                  class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-2 text-lg font-medium rounded-md shadow-lg">
-                  Submit Founder Application
+          <!-- Tabs Wrapper -->
+          <div id="formWrapper" class="fade-up delay-200">
+            <!-- Tabs -->
+            <div class="max-w-5xl mx-auto">
+              <div
+                class="grid w-full grid-cols-2 mb-12 h-auto p-2 bg-gradient-to-r from-slate-100 to-gray-100 rounded-xl"
+              >
+                <button
+                  class="tab-btn py-4 font-semibold rounded-lg transition-all duration-300 text-slate-700"
+                  data-tab="founderTab"
+                  id="founderBtn"
+                >
+                  Founder Application
                 </button>
 
-                <p class="text-sm text-gray-600 mt-4 leading-relaxed">
-                  By submitting this form, you agree that 104 Impact Partners Ltd may review and store the information
-                  provided for the
-                  purpose of responding to your enquiry. We do not share your information with third parties.
-                </p>
-              </form>
-            </div>
-
-            <!-- Partner Form -->
-            <div id="partnerTab" class="tab-content hidden">
-              <form id="partnerForm"
-                class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 shadow-xl">
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Name *</label>
-                    <input required placeholder="Your full name"
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
-                  </div>
-
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Email *</label>
-                    <input type="email" required placeholder="your@email.com"
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
-                  </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label class="font-medium text-slate-900 mb-2 block">Organisation *</label>
-                    <input required placeholder="Organization name"
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
-                  </div>
-
-                  <div>
-                    <label htmlFor="impact-area" class="text-slate-900 font-medium mb-2">
-                      Areas of interest
-                    </label>
-                    <select id="impact-area" name="impact-area" required
-                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded">
-                      <option value="" disabled selected>Select area</option>
-                      <option value="Health Tech">Health Tech</option>
-                      <option value="Biotech">Biotech</option>
-                      <option value="Neurotech & AI">Neurotech & AI</option>
-                      <option value="Infrastructure & Data">Infrastructure & Data</option>
-                      <option value="Sustainability">Sustainability</option>
-                      <option value="Consumer Goods">Consumer Goods</option>
-                      <option value="IP / Media">IP / Media</option>
-                      <option value="Arts & Culture">Arts & Culture</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mb-8">
-                  <label class="font-medium text-slate-900 mb-2 block">Partnership Description *</label>
-                  <textarea required rows="5" placeholder="Describe the partnership description here..."
-                    class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"></textarea>
-                </div>
-
-                <button type="submit"
-                  class="w-full bg-gradient-to-r from-teal-600 to-emerald-700 hover:from-teal-700 hover:to-emerald-800 text-white py-2 text-lg font-medium rounded-md shadow-lg">
-                  Submit Partner Application
+                <button
+                  class="tab-btn py-4 font-semibold rounded-lg transition-all duration-300 text-slate-700"
+                  data-tab="partnerTab"
+                  id="partnerBtn"
+                >
+                  Impact Partner Application
                 </button>
+              </div>
 
-                <p class="text-sm text-gray-600 mt-4 leading-relaxed">
-                  By submitting this form, you agree that 104 Impact Partners Ltd may review and store the information
-                  provided for the
-                  purpose of responding to your enquiry. We do not share your information with third parties.
-                </p>
-              </form>
+              <!-- Founder Form -->
+              <div id="founderTab" class="tab-content block">
+                <form
+                  method="post"
+                  id="founderForm"
+                  class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 shadow-xl"
+                >
+                  <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label
+                        for="founderName"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Name *
+                      </label>
+                      <input
+                        id="founderName"
+                        type="text"
+                        name="Name"
+                        required
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                        placeholder="Your full name"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="founderEmail"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Email *
+                      </label>
+                      <input
+                        id="founderEmail"
+                        type="email"
+                        name="Email"
+                        required
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label
+                        for="founderCompany"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Company *
+                      </label>
+                      <input
+                        id="founderCompany"
+                        type="text"
+                        name="Company"
+                        required
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                        placeholder="Company name"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="founderWebsite"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Website
+                      </label>
+                      <input
+                        id="founderWebsite"
+                        type="url"
+                        name="Website"
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                        placeholder="https://yourcompany.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label
+                        for="founderStage"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Stage *
+                      </label>
+                      <select
+                        id="founderStage"
+                        name="Stage"
+                        required
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      >
+                        <option value="" disabled selected>Select stage</option>
+                        <option value="Idea">Idea</option>
+                        <option value="Pre-seed">Pre-seed</option>
+                        <option value="Seed">Seed</option>
+                        <option value="Series A">Series A</option>
+                        <option value="Series B">Series B</option>
+                        <option value="Series C+">Series C+</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label
+                        for="founderSector"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Sector *
+                      </label>
+                      <select
+                        id="founderSector"
+                        name="Sector"
+                        required
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      >
+                        <option value="" disabled selected>
+                          Select sector
+                        </option>
+                        <option value="Health tech">Health tech</option>
+                        <option value="Women's Health">Women's Health</option>
+                        <option value="Biotech">Biotech</option>
+                        <option value="Neurotech">Neurotech</option>
+                        <option value="AI">AI</option>
+                        <option value="Infrastructure and data">
+                          Infrastructure and data
+                        </option>
+                        <option value="Sustainability">Sustainability</option>
+                        <option value="Consumer goods">Consumer goods</option>
+                        <option value="IP and media">IP and media</option>
+                        <option value="Arts and culture">
+                          Arts and culture
+                        </option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <label
+                      for="supportDescription"
+                      class="font-medium text-slate-900 mb-2 block"
+                    >
+                      Support Description *
+                    </label>
+                    <textarea
+                      id="supportDescription"
+                      name="Support Description"
+                      required
+                      rows="4"
+                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      placeholder="Describe the specific support you're looking for..."
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-6">
+                    <label
+                      for="shortPitch"
+                      class="font-medium text-slate-900 mb-2 block"
+                    >
+                      Short Pitch *
+                    </label>
+                    <textarea
+                      id="shortPitch"
+                      name="Short Pitch"
+                      required
+                      rows="5"
+                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      placeholder="Tell us about your company..."
+                    ></textarea>
+                  </div>
+
+                  <div
+                    id="formMessage"
+                    class="hidden mb-6 rounded-lg p-4 text-sm font-medium transition-all"
+                  ></div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-2 text-lg font-medium rounded-md shadow-lg"
+                  >
+                    Submit Founder Application
+                  </button>
+
+                  <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+                    By submitting this form, you agree that 104 Impact Partners
+                    Ltd may review and store the information provided for the
+                    purpose of responding to your enquiry. We do not share your
+                    information with third parties.
+                  </p>
+                </form>
+              </div>
+
+              <!-- Partner Form -->
+              <div id="partnerTab" class="tab-content hidden">
+                <form
+                  method="post"
+                  id="partnerForm"
+                  class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 shadow-xl"
+                >
+                  <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label
+                        for="partnerName"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Name *
+                      </label>
+                      <input
+                        id="partnerName"
+                        type="text"
+                        name="Name"
+                        required
+                        placeholder="Your full name"
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="partnerEmail"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Email *
+                      </label>
+                      <input
+                        id="partnerEmail"
+                        type="email"
+                        name="Email"
+                        required
+                        placeholder="your@email.com"
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label
+                        for="partnerOrganisation"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Organisation *
+                      </label>
+                      <input
+                        id="partnerOrganisation"
+                        type="text"
+                        name="Organisation"
+                        required
+                        placeholder="Organization name"
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="partnerInterest"
+                        class="font-medium text-slate-900 mb-2 block"
+                      >
+                        Areas of Interest *
+                      </label>
+                      <select
+                        id="partnerInterest"
+                        name="Areas of Interest"
+                        required
+                        class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                      >
+                        <option value="" disabled selected>Select area</option>
+                        <option value="Health Tech">Health Tech</option>
+                        <option value="Biotech">Biotech</option>
+                        <option value="Neurotech & AI">Neurotech & AI</option>
+                        <option value="Infrastructure & Data">
+                          Infrastructure & Data
+                        </option>
+                        <option value="Sustainability">Sustainability</option>
+                        <option value="Consumer Goods">Consumer Goods</option>
+                        <option value="IP / Media">IP / Media</option>
+                        <option value="Arts & Culture">Arts & Culture</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-8">
+                    <label
+                      for="partnerDescription"
+                      class="font-medium text-slate-900 mb-2 block"
+                    >
+                      Partnership Description *
+                    </label>
+                    <textarea
+                      id="partnerDescription"
+                      name="Partnership Description"
+                      required
+                      rows="5"
+                      placeholder="Describe the partnership opportunity here..."
+                      class="w-full bg-white border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring p-3 rounded"
+                    ></textarea>
+                  </div>
+
+                  <div
+                    id="partnerformMessage"
+                    class="hidden mb-6 rounded-lg p-4 text-sm font-medium transition-all"
+                  ></div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-gradient-to-r from-teal-600 to-emerald-700 hover:from-teal-700 hover:to-emerald-800 text-white py-2 text-lg font-medium rounded-md shadow-lg"
+                  >
+                    Submit Partner Application
+                  </button>
+
+                  <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+                    By submitting this form, you agree that 104 Impact Partners
+                    Ltd may review and store the information provided for the
+                    purpose of responding to your enquiry. We do not share your
+                    information with third parties.
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== Partner Section ===== -->
-    <section class="hero-partner">
-      <div class="hero-overlay"></div>
+      <!-- ===== Partner Section ===== -->
+      <section class="hero-partner">
+        <div class="hero-overlay"></div>
 
-      <div class="hero-content">
-        <h1>Building the Future</h1>
+        <div class="hero-content">
+          <h1>Building the Future</h1>
 
-        <div class="flex-parent">
-          <div>
-            <h2>Partner With Us</h2>
+          <div class="flex-parent">
+            <div>
+              <h2>Partner With Us</h2>
 
-            <div class="flex-col md:flex-row md:gap-6 mt-8 md:mt-auto contact-links">
-              <a href="mailto:info@104impact.com">info@104impact.com</a>
-              <span class="divider hidden md:block"></span>
-              <a href="#">www.104impact.com</a>
+              <div
+                class="flex-col md:flex-row md:gap-6 mt-8 md:mt-auto contact-links"
+              >
+                <a href="mailto:info@104impact.com">info@104impact.com</a>
+                <span class="divider hidden md:block"></span>
+                <a href="#">www.104impact.com</a>
+              </div>
             </div>
-          </div>
 
-          <p class="disclaimer">
-            104 Impact Partners Ltd, a company incorporated in England and Wales under Company Number 16344386,
-            having its registered address at 128 City Rd, London EC4V 2JN (“104 Impact”) is not authorised or regulated
-            by the Financial Conduct Authority and does not engage in regulated activities. Our advice is limited to
-            fundraising strategy and investor introductions.
+            <p class="disclaimer">
+              104 Impact Partners Ltd, a company incorporated in England and
+              Wales under Company Number 16344386, having its registered address
+              at 128 City Rd, London EC4V 2JN (“104 Impact”) is not authorised
+              or regulated by the Financial Conduct Authority and does not
+              engage in regulated activities. Our advice is limited to
+              fundraising strategy and investor introductions.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-12 pb-4 px-4">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div>
+          <img src="./assets/images/logo.png" width="120" alt="104 impact" />
+          <br />
+          <p class="text-gray-400 text-xs">
+            From idea to scale, we help build lasting companies.
           </p>
         </div>
+        <div>
+          <h3 class="font-medium text-sm mb-4">Quick Links</h3>
+          <a
+            href="index.html"
+            class="block text-gray-400 hover:text-amber-500 text-xs"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block text-gray-400 hover:text-amber-500 text-xs"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="block text-gray-400 hover:text-amber-500 text-xs"
+            >Contact</a
+          >
+        </div>
+        <div>
+          <h3 class="font-medium text-sm mb-4">Contact</h3>
+          <p class="text-xs text-gray-400">info@104impact.com</p>
+          <p class="text-xs text-gray-400">www.104impact.com</p>
+          <p class="text-xs text-gray-400">128 City Rd, London EC4V 2JN</p>
+        </div>
       </div>
-    </section>
-  </main>
-
-
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-white pt-12 pb-4 px-4">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-      <div>
-        <img src="./assets/images/logo.png" width="120" alt="104 impact"> <br />
-        <p class="text-gray-400 text-xs">From idea to scale, we help build lasting companies.</p>
+      <div
+        class="border-t border-gray-800 pt-4 text-center text-xs text-gray-400 mt-8"
+      >
+        © 2025 104 Impact Partners Ltd. All rights reserved.<br />We are not
+        authorised or regulated and do not provide investment advice.
       </div>
-      <div>
-        <h3 class="font-medium text-sm mb-4">Quick Links</h3>
-        <a href="index.html" class="block text-gray-400 hover:text-amber-500 text-xs">Home</a>
-        <a href="about.html" class="block text-gray-400 hover:text-amber-500 text-xs">About</a>
-        <a href="contact.html" class="block text-gray-400 hover:text-amber-500 text-xs">Contact</a>
-      </div>
-      <div>
-        <h3 class="font-medium text-sm mb-4">Contact</h3>
-        <p class="text-xs text-gray-400">info@104impact.com</p>
-        <p class="text-xs text-gray-400">www.104impact.com</p>
-        <p class="text-xs text-gray-400">128 City Rd, London EC4V 2JN</p>
-      </div>
-    </div>
-    <div class="border-t border-gray-800 pt-4 text-center text-xs text-gray-400 mt-8">
-      © 2025 104 Impact Partners Ltd. All rights reserved.<br>We are not authorised or regulated and do not provide
-      investment advice.
-    </div>
-  </footer>
+    </footer>
 
-  <!-- JS for Scroll & Menu -->
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    const heroBg = document.getElementById('heroBg');
+    <!-- JS for Scroll & Menu -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      const heroBg = document.getElementById("heroBg");
 
-    menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY * 0.5;
-      heroBg.style.transform = `translateY(${y}px)`;
-    });
-  </script>
-
-  <script>
-    /* TAB SWITCHING */
-    const tabButtons = document.querySelectorAll(".tab-btn");
-
-    tabButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const tab = btn.dataset.tab;
-
-        // Remove active class from all buttons
-        tabButtons.forEach(b => b.classList.remove("active-tab"));
-
-        // Add active class to clicked button
-        btn.classList.add("active-tab");
-
-        // Show related tab content
-        document.querySelectorAll(".tab-content").forEach(content => content.classList.add("hidden"));
-        document.getElementById(tab).classList.remove("hidden");
+      menuBtn.addEventListener("click", () => menu.classList.toggle("hidden"));
+      window.addEventListener("scroll", () => {
+        const y = window.scrollY * 0.5;
+        // heroBg.style.transform = `translateY(${y}px)`;
       });
-    });
+    </script>
 
-    /* SET FIRST TAB ACTIVE ON LOAD (NO INLINE STYLING) */
-    document.getElementById("founderBtn").classList.add("active-tab");
+    <script>
+      /* TAB SWITCHING */
+      const tabButtons = document.querySelectorAll(".tab-btn");
 
-    /* FILE PREVIEW */
-    document.getElementById("deckFile").addEventListener("change", function () {
-      const file = this.files[0];
-      if (file) {
-        document.getElementById("fileName").textContent = file.name;
-      }
-    });
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const tab = btn.dataset.tab;
 
-    /* FADE-IN ANIMATION */
-    const fadeElements = document.querySelectorAll(".fade-up");
+          // Remove active class from all buttons
+          tabButtons.forEach((b) => b.classList.remove("active-tab"));
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-show");
+          // Add active class to clicked button
+          btn.classList.add("active-tab");
+
+          // Show related tab content
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((content) => content.classList.add("hidden"));
+          document.getElementById(tab).classList.remove("hidden");
+        });
+      });
+
+      /* SET FIRST TAB ACTIVE ON LOAD (NO INLINE STYLING) */
+      document.getElementById("founderBtn").classList.add("active-tab");
+
+      /* FADE-IN ANIMATION */
+      const fadeElements = document.querySelectorAll(".fade-up");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-show");
+          }
+        });
+      });
+
+      fadeElements.forEach((el) => observer.observe(el));
+    </script>
+
+    <!-- Founder Form Submission -->
+    <script>
+      const founderForm = document.getElementById("founderForm");
+
+      founderForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(founderForm);
+
+        const fields = {
+          Name: formData.get("Name"),
+          Email: formData.get("Email"),
+          Company: formData.get("Company"),
+          Website: formData.get("Website"),
+          Stage: formData.get("Stage"),
+          Sector: formData.get("Sector"),
+          "Support Description": formData.get("Support Description"),
+          "Short Pitch": formData.get("Short Pitch"),
+        };
+
+        await sendFounderToAirtable(fields);
+      });
+
+      async function sendFounderToAirtable(fields) {
+        const messageBox = document.getElementById("formMessage");
+        const submitBtn = founderForm.querySelector("button[type='submit']");
+
+        messageBox.className = "hidden";
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Submitting...";
+
+        try {
+          const response = await fetch("/api/submit.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              table: "Founder Table",
+              fields: fields,
+            }),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw data;
+          }
+
+          messageBox.className =
+            "mb-6 rounded-lg p-4 text-green-800 bg-green-50 border border-green-200";
+          messageBox.innerHTML =
+            "✅ <strong>Founder application submitted successfully.</strong>";
+
+          founderForm.reset();
+        } catch (err) {
+          console.error("Submission error:", err);
+          messageBox.className =
+            "mb-6 rounded-lg p-4 text-red-800 bg-red-50 border border-red-200";
+          messageBox.innerHTML =
+            "❌ <strong>Submission failed.</strong><br>Please try again later.";
+        } finally {
+          messageBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Submit Founder Application";
         }
+      }
+    </script>
+
+    <!-- Partner Form Submission -->
+    <script>
+      const partnerForm = document.getElementById("partnerForm");
+
+      partnerForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(partnerForm);
+
+        const fields = {
+          Name: formData.get("Name"),
+          Email: formData.get("Email"),
+          Organisation: formData.get("Organisation"),
+          "Areas of Interest": formData.get("Areas of Interest"),
+          "Partnership Description": formData.get("Partnership Description"),
+        };
+
+        await sendPartnerToAirtable(fields);
       });
-    });
 
-    fadeElements.forEach((el) => observer.observe(el));
-  </script>
+      async function sendPartnerToAirtable(fields) {
+        const messageBox = document.getElementById("partnerformMessage");
+        const submitBtn = partnerForm.querySelector("button[type='submit']");
 
-</body>
+        messageBox.className = "hidden";
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Submitting...";
 
+        try {
+          const response = await fetch("/api/submit.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              table: "Partner Table",
+              fields: fields,
+            }),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw data;
+          }
+
+          messageBox.className =
+            "mb-6 rounded-lg p-4 text-green-800 bg-green-50 border border-green-200";
+          messageBox.innerHTML =
+            "✅ <strong>Partner application submitted successfully.</strong>";
+
+          partnerForm.reset();
+        } catch (err) {
+          console.error("Submission error:", err);
+          messageBox.className =
+            "mb-6 rounded-lg p-4 text-red-800 bg-red-50 border border-red-200";
+          messageBox.innerHTML =
+            "❌ <strong>Submission failed.</strong><br>Please try again later.";
+        } finally {
+          messageBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Submit Partner Application";
+        }
+      }
+    </script>
+  </body>
 </html>
